@@ -16,7 +16,8 @@ crump-tools/
 └── templates/
     ├── active-directory/   # OU structure and delegation templates
     ├── group-policy/       # GPO configuration references
-    └── network/            # VLAN and firewall design templates
+    ├── network/            # VLAN and firewall design templates
+    └── pki/                # PKI/certificate authority templates
 ```
 
 ## Usage

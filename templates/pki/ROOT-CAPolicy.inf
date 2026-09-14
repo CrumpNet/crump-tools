@@ -1,0 +1,18 @@
+[Version]
+Signature="$Windows NT$"
+
+[Certsrv_Server]
+RenewalKeyLength=4096
+RenewalValidityPeriod=Years
+RenewalValidityPeriodUnits=10
+CRLDeltaPeriod=Days
+CRLDeltaPeriodUnits=0
+CNGHashAlgorithm=SHA256
+AlternateSignatureAlgorithm=0
+
+[CRLDistributionPoint]
+[AuthorityInformationAccess]
+
+[Extensions]
+2.5.29.15=AwIBhg==
+Critical=2.5.29.15

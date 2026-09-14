@@ -1,0 +1,34 @@
+[Version]
+Signature="$Windows NT$"
+
+[Certsrv_Server]
+RenewalKeyLength=4096
+RenewalValidityPeriod=Years
+RenewalValidityPeriodUnits=5
+CRLPeriod=Weeks
+CRLPeriodUnits=1
+CRLDeltaPeriod=Days
+CRLDeltaPeriodUnits=1
+LoadDefaultTemplates=0
+CNGHashAlgorithm=SHA256
+AlternateSignatureAlgorithm=0
+
+[PolicyStatementExtension]
+Policies = CorePolicy
+
+[CorePolicy]
+OID = 1.3.6.1.4.1.<PEN>.1.1
+URL=http://web.server.domain.tld/
+
+[CRLDistributionPoint]
+URL=http://web.server.domain.tld/crl/Core-Enterprise-CA.crl
+
+[AuthorityInformationAccess]
+URL=http://web.server.domain.tld/crl/Core-Enterprise-CA.crt
+
+[BasicConstraintsExtension]
+PathLength=0
+
+[Extensions]
+2.5.29.15=AwIBhg==
+Critical=2.5.29.15
